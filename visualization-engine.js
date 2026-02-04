@@ -65,7 +65,9 @@ function calculateRealisticLossPercentage(data) {
         basePercentage = (meltingRateKgPerSecond / 50000) * (periodSeconds / 31536000) * 100;
     }
     
-    if (data.period.name === 'CENTURY') {
+    if (data.period.name === 'MILLENNIUM') {
+        basePercentage *= 5.0;
+    } else if (data.period.name === 'CENTURY') {
         basePercentage *= 2.5;
     } else if (data.period.name === 'DECADE') {
         basePercentage *= 1.5;

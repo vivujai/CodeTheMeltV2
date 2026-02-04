@@ -45,6 +45,7 @@
                     </div>
                 </div>
                 <div class="time-period-buttons">
+                    <button id="millennium-btn" class="nav-button neon-text" onclick="selectTimePeriod('MILLENNIUM')">Millennium</button>
                     <button id="century-btn" class="nav-button neon-text" onclick="selectTimePeriod('CENTURY')">Century</button>
                     <button id="decade-btn" class="nav-button neon-text" onclick="selectTimePeriod('DECADE')">Decade</button>
                     <button id="annual-btn" class="nav-button neon-text" onclick="selectTimePeriod('ANNUAL')">Annual</button>
@@ -98,6 +99,11 @@
         };
 
         const TimePeriod = {
+            MILLENNIUM: {
+                name: 'MILLENNIUM',
+                seconds: 31536000000,
+                displayName: 'Millennium'
+            },
             CENTURY: {
                 name: 'CENTURY',
                 seconds: 3153600000,

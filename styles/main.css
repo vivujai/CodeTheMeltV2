@@ -27,34 +27,28 @@ body {
     display: none;
 }
 
-/* Enhanced Neon text effects - glow matches text color */
+/* Reduced Neon text effects - subtle glow */
 .neon-text {
     text-shadow: 
-        0 0 5px currentColor,
-        0 0 10px currentColor,
-        0 0 15px currentColor,
-        0 0 20px currentColor,
-        0 0 25px currentColor;
+        0 0 2px currentColor,
+        0 0 4px currentColor,
+        0 0 6px currentColor;
     animation: neonPulse 2s ease-in-out infinite alternate;
 }
 
-/* Neon glow animation */
+/* Reduced neon glow animation */
 @keyframes neonPulse {
     from {
         text-shadow: 
-            0 0 5px currentColor,
-            0 0 10px currentColor,
-            0 0 15px currentColor,
-            0 0 20px currentColor,
-            0 0 25px currentColor;
+            0 0 2px currentColor,
+            0 0 4px currentColor,
+            0 0 6px currentColor;
     }
     to {
         text-shadow: 
+            0 0 1px currentColor,
             0 0 2px currentColor,
-            0 0 5px currentColor,
-            0 0 8px currentColor,
-            0 0 12px currentColor,
-            0 0 15px currentColor;
+            0 0 3px currentColor;
     }
 }
 
@@ -95,30 +89,24 @@ p, span, div {
     font-weight: bold;
     letter-spacing: 2px;
     text-shadow: 
-        0 0 10px #00ffff,
-        0 0 20px #00ffff,
-        0 0 30px #00ffff,
-        0 0 40px #00ffff,
-        0 0 50px #00ffff;
+        0 0 3px #00ffff,
+        0 0 6px #00ffff,
+        0 0 9px #00ffff;
     animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 @keyframes titleGlow {
     from {
         text-shadow: 
-            0 0 10px #00ffff,
-            0 0 20px #00ffff,
-            0 0 30px #00ffff,
-            0 0 40px #00ffff,
-            0 0 50px #00ffff;
+            0 0 3px #00ffff,
+            0 0 6px #00ffff,
+            0 0 9px #00ffff;
     }
     to {
         text-shadow: 
-            0 0 5px #00ffff,
-            0 0 10px #00ffff,
-            0 0 15px #00ffff,
-            0 0 20px #00ffff,
-            0 0 25px #00ffff;
+            0 0 2px #00ffff,
+            0 0 4px #00ffff,
+            0 0 6px #00ffff;
     }
 }
 
@@ -129,7 +117,7 @@ p, span, div {
     gap: 30px;
 }
 
-/* Enhanced responsive button styling with neon effects */
+/* Enhanced responsive button styling with reduced neon effects */
 .nav-button {
     background: linear-gradient(45deg, #0066ff, #00ffff);
     border: 2px solid #00ffff;
@@ -144,34 +132,31 @@ p, span, div {
     min-width: 250px;
     letter-spacing: 1px;
     text-shadow: 
-        0 0 5px white,
-        0 0 10px white,
-        0 0 15px white;
+        0 0 2px white,
+        0 0 4px white;
     box-shadow: 
-        0 0 10px rgba(0, 255, 255, 0.3),
-        inset 0 0 10px rgba(0, 255, 255, 0.1);
+        0 0 5px rgba(0, 255, 255, 0.3),
+        inset 0 0 5px rgba(0, 255, 255, 0.1);
 }
 
 .nav-button:hover {
     box-shadow: 
-        0 0 20px #00ffff,
-        0 0 30px #00ffff,
-        0 0 40px #00ffff,
-        inset 0 0 20px rgba(0, 255, 255, 0.2);
+        0 0 8px #00ffff,
+        0 0 12px #00ffff,
+        inset 0 0 10px rgba(0, 255, 255, 0.2);
     transform: scale(1.05);
     background: linear-gradient(45deg, #00ffff, #0066ff);
     text-shadow: 
-        0 0 8px white,
-        0 0 15px white,
-        0 0 20px white;
+        0 0 3px white,
+        0 0 6px white;
 }
 
 .nav-button:active {
     transform: scale(0.98);
     box-shadow: 
-        0 0 15px #00ffff,
-        0 0 25px #00ffff,
-        inset 0 0 15px rgba(0, 255, 255, 0.3);
+        0 0 6px #00ffff,
+        0 0 10px #00ffff,
+        inset 0 0 8px rgba(0, 255, 255, 0.3);
 }
 
 /* Detail Page Styling */
@@ -206,9 +191,8 @@ p, span, div {
     margin-bottom: 40px;
     color: #00ffff;
     text-shadow: 
-        0 0 8px #00ffff,
-        0 0 15px #00ffff,
-        0 0 25px #00ffff;
+        0 0 3px #00ffff,
+        0 0 6px #00ffff;
 }
 
 .stats-container {
@@ -280,9 +264,8 @@ p, span, div {
     top: 20px;
     margin: 0;
     text-shadow: 
-        0 0 8px #00ffff,
-        0 0 15px #00ffff,
-        0 0 25px #00ffff;
+        0 0 3px #00ffff,
+        0 0 6px #00ffff;
 }
 
 /* Exit option positioned in top right corner */
@@ -389,33 +372,33 @@ p, span, div {
     border-radius: 8px;
     cursor: pointer;
     text-shadow: 
-        0 0 3px white,
-        0 0 6px white;
+        0 0 1px white,
+        0 0 2px white;
     box-shadow: 
-        0 0 5px rgba(0, 102, 255, 0.3),
-        inset 0 0 5px rgba(0, 102, 255, 0.1);
+        0 0 3px rgba(0, 102, 255, 0.3),
+        inset 0 0 3px rgba(0, 102, 255, 0.1);
 }
 
 .viz-mode-button:hover {
     background: rgba(0, 255, 255, 0.2);
     border-color: #00ffff;
     box-shadow: 
-        0 0 10px rgba(0, 255, 255, 0.5),
-        inset 0 0 10px rgba(0, 255, 255, 0.2);
+        0 0 5px rgba(0, 255, 255, 0.5),
+        inset 0 0 5px rgba(0, 255, 255, 0.2);
     text-shadow: 
-        0 0 5px white,
-        0 0 10px white;
+        0 0 2px white,
+        0 0 4px white;
 }
 
 .viz-mode-button.active {
     background: rgba(0, 255, 255, 0.3);
     border-color: #00ffff;
     box-shadow: 
-        0 0 15px #00ffff,
-        inset 0 0 15px rgba(0, 255, 255, 0.3);
+        0 0 6px #00ffff,
+        inset 0 0 6px rgba(0, 255, 255, 0.3);
     text-shadow: 
-        0 0 8px white,
-        0 0 15px white;
+        0 0 3px white,
+        0 0 5px white;
 }
 
 /* Responsive design */

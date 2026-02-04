@@ -35,6 +35,11 @@ const timePeriods = {
         name: 'CENTURY',
         seconds: 3153600000,
         displayName: 'Century'
+    },
+    'MILLENNIUM': {
+        name: 'MILLENNIUM',
+        seconds: 31536000000,
+        displayName: 'Millennium'
     }
 };
 
