@@ -48,7 +48,7 @@
                     <button id="millennium-btn" class="nav-button neon-text" onclick="selectTimePeriod('MILLENNIUM')">Millennium</button>
                     <button id="century-btn" class="nav-button neon-text" onclick="selectTimePeriod('CENTURY')">Century</button>
                     <button id="decade-btn" class="nav-button neon-text" onclick="selectTimePeriod('DECADE')">Decade</button>
-                    <button id="annual-btn" class="nav-button neon-text" onclick="selectTimePeriod('ANNUAL')">Annual</button>
+                    <button id="annual-btn" class="nav-button neon-text" onclick="selectTimePeriod('ANNUAL')">Annum</button>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
             ANNUAL: {
                 name: 'ANNUAL',
                 seconds: 31536000,
-                displayName: 'Annual'
+                displayName: 'Annum'
             }
         };
 
@@ -598,7 +598,7 @@
                                             <h5 style="color: #00ffff; margin-bottom: 8px; font-size: 1rem; border-bottom: 1px solid rgba(0, 255, 255, 0.3); padding-bottom: 4px;">Analysis Summary</h5>
                                             <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Affected area: ${massLossPercentage.toFixed(1)}% of total</p>
                                             <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Stable regions: ${remainingPercentage.toFixed(1)}% of total</p>
-                                            <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Time period: annual</p>
+                                            <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Time period: ${data.period.displayName.toLowerCase()}</p>
                                             <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Mass loss rate: ${data.meltingRate.toFixed(2)} kg/s</p>
                                         </div>
                                     </div>
@@ -690,7 +690,7 @@
                                             <h5 style="color: #00ffff; margin-bottom: 8px; font-size: 1rem; border-bottom: 1px solid rgba(0, 255, 255, 0.3); padding-bottom: 4px;">Analysis Summary</h5>
                                             <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Affected area: ${massLossPercentage.toFixed(1)}% of total</p>
                                             <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Stable regions: ${remainingPercentage.toFixed(1)}% of total</p>
-                                            <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Time period: annual</p>
+                                            <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Time period: ${data.period.displayName.toLowerCase()}</p>
                                             <p style="margin-bottom: 4px; font-size: 0.85rem; color: #cccccc;">Mass loss rate: ${data.meltingRate.toFixed(2)} kg/s</p>
                                         </div>
                                     </div>

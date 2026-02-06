@@ -24,7 +24,7 @@ const timePeriods = {
     'ANNUAL': {
         name: 'ANNUAL',
         seconds: 31536000,
-        displayName: 'Annual'
+        displayName: 'Annum'
     },
     'DECADE': {
         name: 'DECADE',
